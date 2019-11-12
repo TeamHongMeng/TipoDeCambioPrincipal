@@ -145,10 +145,11 @@ class Tabla extends Component {
                                     compra: props.original.compra,
                                     venta: props.original.venta
                                 }
-
+ 
                                 axios.post("https://tcs-tipocambio.herokuapp.com/insertarTipoCambio", data,{
                                   headers: {
-                                    "Access-Control-Allow-Origin": "*"
+                                    'Access-Control-Allow-Origin': 'http://localhost:3000',
+                                    'Access-Control-Allow-Credentials': true
                                   }
                                     })
                                     .then(data => {
