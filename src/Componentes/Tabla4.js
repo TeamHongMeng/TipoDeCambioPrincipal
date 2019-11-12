@@ -138,7 +138,11 @@ class Tabla4 extends Component {
                                     venta: props.original.venta
                                 }
 
-                                axios.put("https://tcs-tipocambio.herokuapp.com/actualizarFecha/"+data.fecha, data)
+                                axios.put("https://tcs-tipocambio.herokuapp.com/actualizarFecha/"+data.fecha, data, 
+                                {headers: {
+                                  'Access-Control-Allow-Origin': '*'
+                                }
+                                })
                                     .then(data => {
                                         console.log("llego xd");
                                         Swal.fire("Good job!", "You clicked the button!", "success").then(function () {

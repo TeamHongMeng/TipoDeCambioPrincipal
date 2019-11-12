@@ -148,7 +148,7 @@ class Tabla extends Component {
  
                                 axios.post("https://tcs-tipocambio.herokuapp.com/insertarTipoCambio", data,{
                                   headers: {
-                                    'Access-Control-Allow-Origin': '*',
+                                    'Access-Control-Allow-Origin': '*'
                                   }
                                     })
                                     .then(data => {
@@ -159,7 +159,7 @@ class Tabla extends Component {
 
                                         //window.location.reload();
                                     }).catch(err => {
-                                        console.log("aggg")
+                                        console.log("no guardado")
                                         Swal.fire("Oops, Algo salió mal!!", "", "error")
                                         //window.location.reload();                 
 
