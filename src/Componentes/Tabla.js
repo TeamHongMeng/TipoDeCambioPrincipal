@@ -148,8 +148,7 @@ class Tabla extends Component {
  
                                 axios.post("https://tcs-tipocambio.herokuapp.com/insertarTipoCambio", data,{
                                   headers: {
-                                    'Access-Control-Allow-Origin': 'https://hongmengteam-principal.herokuapp.com/vista/TipoDeCambio',
-                                    'Access-Control-Allow-Credentials': true
+                                    'Access-Control-Allow-Origin': '*',
                                   }
                                     })
                                     .then(data => {
