@@ -61,7 +61,7 @@ class Tabla extends Component {
       }
     
       componentDidMount() {
-        const url = "https://api-dolares.herokuapp.com/api/fecha_importe_dolares";
+        const url = "https://hongmengteam-tipodecambio.herokuapp.com/api/fecha_importe_dolares";
         fetch(url, {
           method: "GET"
         }).then(response => response.json()).then(posts => {
@@ -146,7 +146,7 @@ class Tabla extends Component {
                                     venta: props.original.venta
                                 }
  
-                                axios.post("https://tcs-tipocambio.herokuapp.com/insertarTipoCambio", data,{
+                                axios.post("https://hongmengteam-tipodecambio-scra.herokuapp.com/insertarTipoCambio", data,{
                                   headers: {
                                     'Access-Control-Allow-Origin': '*'
                                   }

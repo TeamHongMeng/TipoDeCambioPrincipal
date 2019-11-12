@@ -53,7 +53,7 @@ class Tabla4 extends Component {
       }
     
       componentDidMount() {
-        const url = "https://api-dolares.herokuapp.com/api/tipo_cambio";
+        const url = "https://hongmengteam-tipodecambio.herokuapp.com/api/tipo_cambio";
         fetch(url, {
           method: "GET"
         }).then(response => response.json()).then(posts => {
@@ -138,11 +138,10 @@ class Tabla4 extends Component {
                                     venta: props.original.venta
                                 }
 
-                                axios.put("https://tcs-tipocambio.herokuapp.com/actualizarFecha/"+data.fecha, data, 
+                                axios.put("https://hongmengteam-tipodecambio-scra.herokuapp.com/actualizarFecha/"+data.fecha, data, 
                                 {headers: {
-                                  'Access-Control-Allow-Origin': '*'
-                                }
-                                })
+                                    'Access-Control-Allow-Origin': '*'
+                                  }})
                                     .then(data => {
                                         console.log("llego xd");
                                         Swal.fire("Good job!", "You clicked the button!", "success").then(function () {
