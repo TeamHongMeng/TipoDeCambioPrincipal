@@ -2,10 +2,10 @@
   "name": "modulo2-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://hongmengteam-principal.herokuapp.com",
   "dependencies": {
     "@trendmicro/react-sidenav": "^0.4.5",
     "axios": "^0.19.0",
+    "http-proxy-middleware": "^0.20.0",
     "jspdf": "^1.3.5",
     "jspdf-autotable": "^2.3.2",
     "npm": "^6.4.1",
