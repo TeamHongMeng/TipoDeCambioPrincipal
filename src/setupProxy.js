@@ -2,9 +2,9 @@ const proxy = require('http-proxy-middleware');
 
 module.exports = function(app) {
     app.use(
-        proxy('https://hongmengteam-tipodecambio-scra.herokuapp.com/actualizarFecha/', 
+        proxy('/api', 
         { 
-            target: 'https://hongmengteam-principal.herokuapp.com/vista/TipoDeCambio',
+            target: 'https://hongmengteam-tipodecambio-scra.herokuapp.com/actualizarFecha',
             secure: false,
             changeOrigin: true
         }));

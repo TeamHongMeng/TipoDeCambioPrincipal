@@ -153,7 +153,7 @@ class Tabla4 extends Component {
 
                                         //window.location.reload();
                                     }).catch(err => {
-                                        console.log("aggg")
+                                        console.log("no guarda :C")
                                         Swal.fire("Oops, Algo salió mal!!", "", "error")
                                         //window.location.reload();                 
 
