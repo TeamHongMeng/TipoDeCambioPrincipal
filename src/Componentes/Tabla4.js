@@ -138,7 +138,7 @@ class Tabla4 extends Component {
                                     venta: props.original.venta
                                 }
 
-                                axios.put('``+data.fecha, data, 
+                                axios.put(`/actualizarFecha/`+data.fecha, data, 
                                 {headers: {
                                   'Access-Control-Allow-Origin' : '*',
                                   }})
