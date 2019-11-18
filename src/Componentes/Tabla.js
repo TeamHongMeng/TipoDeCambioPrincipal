@@ -148,8 +148,12 @@ class Tabla extends Component {
  
                                 axios.post("https://hongmengteam-tipodecambio-scra.herokuapp.com/insertarTipoCambio", data,{
                                   headers: {
-                                    'Access-Control-Allow-Origin' : '*'
-                                  }
+                                    'Accept': 'application/json',
+                                    'Content-Type': 'application/json',
+                                    'aplicacion': 'xxx',
+                                },
+                                mode: 'cors',
+                                cache: 'default'
                                     })
                                     .then(data => {
                                         console.log("llego xd");
