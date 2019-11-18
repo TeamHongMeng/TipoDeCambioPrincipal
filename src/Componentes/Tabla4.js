@@ -138,12 +138,9 @@ class Tabla4 extends Component {
                                     venta: props.original.venta
                                 }
 
-                                axios.put("https://hongmengteam-tipodecambio-scra.herokuapp.com/actualizarFecha/"+data.fecha, data, 
+                                axios.put('``+data.fecha, data, 
                                 {headers: {
                                   'Access-Control-Allow-Origin' : '*',
-                                  'Content-Type': 'application/json',
-                                  'Vary': 'Origin',
-                                  "Access-Control-Allow-Methods": 'POST'
                                   }})
                                     .then(data => {
                                         console.log("llego xd");
