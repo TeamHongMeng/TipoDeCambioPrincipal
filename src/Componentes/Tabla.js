@@ -146,7 +146,7 @@ class Tabla extends Component {
                                     venta: props.original.venta
                                 }
  
-                                axios.post(`https://hongmengteam-tipodecambio-scra.herokuapp.com/insertarTipoCambio`, data,{
+                                axios.post("/api", data,{
                                   headers: {
                                     'Access-Control-Allow-Origin' : '*'
                                   }
